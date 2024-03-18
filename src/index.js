@@ -3,6 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+
+// 创建router实力对象并且配置路由对应关系
+const router = createBrowserRouter([
+  {path: '/', element: <App />},
+  {path: '/', element: <App />},
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
